@@ -11,6 +11,15 @@
 		1DAAF0E72C7F09AF002696AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAAF0E62C7F09AF002696AC /* ContentView.swift */; };
 		1DAAF0E92C7F09B1002696AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAAF0E82C7F09B1002696AC /* Assets.xcassets */; };
 		1DAAF0EC2C7F09B1002696AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAAF0EB2C7F09B1002696AC /* Preview Assets.xcassets */; };
+		1DAAF0F62C7F0A06002696AC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAAF0F52C7F0A06002696AC /* HomeView.swift */; };
+		1DAAF0F82C7F0A0F002696AC /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAAF0F72C7F0A0F002696AC /* GraphView.swift */; };
+		1DAAF0FE2C7F0CC2002696AC /* Inter_28pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DAAF0FA2C7F0CC2002696AC /* Inter_28pt-Regular.ttf */; };
+		1DAAF0FF2C7F0CC2002696AC /* Inter_28pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DAAF0FB2C7F0CC2002696AC /* Inter_28pt-Medium.ttf */; };
+		1DAAF1002C7F0CC2002696AC /* Inter_28pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DAAF0FC2C7F0CC2002696AC /* Inter_28pt-Bold.ttf */; };
+		1DAAF1012C7F0CC2002696AC /* Inter_28pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DAAF0FD2C7F0CC2002696AC /* Inter_28pt-SemiBold.ttf */; };
+		1DAAF1062C7F0DF4002696AC /* CryptoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAAF1052C7F0DF4002696AC /* CryptoDetailView.swift */; };
+		1DAAF1082C7F1C06002696AC /* CryptoGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAAF1072C7F1C06002696AC /* CryptoGridView.swift */; };
+		1DAAF10B2C7F1C4B002696AC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAAF10A2C7F1C4B002696AC /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,16 @@
 		1DAAF0E62C7F09AF002696AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1DAAF0E82C7F09B1002696AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DAAF0EB2C7F09B1002696AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1DAAF0F52C7F0A06002696AC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1DAAF0F72C7F0A0F002696AC /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		1DAAF0FA2C7F0CC2002696AC /* Inter_28pt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-Regular.ttf"; sourceTree = "<group>"; };
+		1DAAF0FB2C7F0CC2002696AC /* Inter_28pt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-Medium.ttf"; sourceTree = "<group>"; };
+		1DAAF0FC2C7F0CC2002696AC /* Inter_28pt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-Bold.ttf"; sourceTree = "<group>"; };
+		1DAAF0FD2C7F0CC2002696AC /* Inter_28pt-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-SemiBold.ttf"; sourceTree = "<group>"; };
+		1DAAF1022C7F0CD4002696AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1DAAF1052C7F0DF4002696AC /* CryptoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailView.swift; sourceTree = "<group>"; };
+		1DAAF1072C7F1C06002696AC /* CryptoGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoGridView.swift; sourceTree = "<group>"; };
+		1DAAF10A2C7F1C4B002696AC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +70,15 @@
 		1DAAF0E32C7F09AF002696AC /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				1DAAF1092C7F1C3F002696AC /* Utility */,
+				1DAAF0F22C7F09BD002696AC /* Model */,
+				1DAAF0F32C7F09C8002696AC /* View */,
+				1DAAF0F42C7F09CD002696AC /* ViewModel */,
 				1DAAF0E42C7F09AF002696AC /* CryptoTrackerApp.swift */,
 				1DAAF0E62C7F09AF002696AC /* ContentView.swift */,
 				1DAAF0E82C7F09B1002696AC /* Assets.xcassets */,
+				1DAAF1022C7F0CD4002696AC /* Info.plist */,
+				1DAAF0F92C7F0CB2002696AC /* Font */,
 				1DAAF0EA2C7F09B1002696AC /* Preview Content */,
 			);
 			path = CryptoTracker;
@@ -65,6 +90,66 @@
 				1DAAF0EB2C7F09B1002696AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DAAF0F22C7F09BD002696AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DAAF0F32C7F09C8002696AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DAAF0F52C7F0A06002696AC /* HomeView.swift */,
+				1DAAF0F72C7F0A0F002696AC /* GraphView.swift */,
+				1DAAF1032C7F0DD1002696AC /* Home */,
+				1DAAF1042C7F0DD9002696AC /* Graph */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DAAF0F42C7F09CD002696AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1DAAF0F92C7F0CB2002696AC /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				1DAAF0FC2C7F0CC2002696AC /* Inter_28pt-Bold.ttf */,
+				1DAAF0FB2C7F0CC2002696AC /* Inter_28pt-Medium.ttf */,
+				1DAAF0FA2C7F0CC2002696AC /* Inter_28pt-Regular.ttf */,
+				1DAAF0FD2C7F0CC2002696AC /* Inter_28pt-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		1DAAF1032C7F0DD1002696AC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1DAAF1052C7F0DF4002696AC /* CryptoDetailView.swift */,
+				1DAAF1072C7F1C06002696AC /* CryptoGridView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1DAAF1042C7F0DD9002696AC /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		1DAAF1092C7F1C3F002696AC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1DAAF10A2C7F1C4B002696AC /* Constant.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +210,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DAAF1012C7F0CC2002696AC /* Inter_28pt-SemiBold.ttf in Resources */,
 				1DAAF0EC2C7F09B1002696AC /* Preview Assets.xcassets in Resources */,
+				1DAAF1002C7F0CC2002696AC /* Inter_28pt-Bold.ttf in Resources */,
+				1DAAF0FE2C7F0CC2002696AC /* Inter_28pt-Regular.ttf in Resources */,
+				1DAAF0FF2C7F0CC2002696AC /* Inter_28pt-Medium.ttf in Resources */,
 				1DAAF0E92C7F09B1002696AC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +226,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DAAF10B2C7F1C4B002696AC /* Constant.swift in Sources */,
+				1DAAF0F62C7F0A06002696AC /* HomeView.swift in Sources */,
+				1DAAF1082C7F1C06002696AC /* CryptoGridView.swift in Sources */,
 				1DAAF0E72C7F09AF002696AC /* ContentView.swift in Sources */,
+				1DAAF1062C7F0DF4002696AC /* CryptoDetailView.swift in Sources */,
 				1DAAF0E52C7F09AF002696AC /* CryptoTrackerApp.swift in Sources */,
+				1DAAF0F82C7F0A0F002696AC /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +369,7 @@
 				DEVELOPMENT_TEAM = W8RLJ8MS39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +399,7 @@
 				DEVELOPMENT_TEAM = W8RLJ8MS39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

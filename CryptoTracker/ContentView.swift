@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+   var body: some View {
+	  TabView {
+		 HomeView()
+			.tabItem {
+			   Label("Home", systemImage: "house.fill")
+			}
+		 GraphView()
+			.tabItem { Label("Graph", systemImage: "chart.line.uptrend.xyaxis") }
+	  }
+   }
 }
 
 #Preview {
-    ContentView()
+   ContentView()
 }
