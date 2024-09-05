@@ -9,14 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
    var body: some View {
-	  TabView {
-		 HomeView()
-			.tabItem {
-			   Label("Home", systemImage: "house.fill")
-			}
-		 GraphView()
-			.tabItem { Label("Graph", systemImage: "chart.line.uptrend.xyaxis") }
-	  }
+	  HomeView()
    }
 }
 

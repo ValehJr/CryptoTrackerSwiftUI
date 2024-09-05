@@ -9,7 +9,17 @@ import SwiftUI
 
 struct GraphView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+	   ZStack {
+		  Color("Background")
+			 .edgesIgnoringSafeArea(.all)
+		  VStack {
+			 Text("Graphs")
+				.font(.custom("Inter_28pt-SemiBold", size: 24))
+				.foregroundStyle(.neutral200)
+			 Spacer()
+		  }//V
+	   }//Z
+	   .frame(maxWidth: .infinity,maxHeight: .infinity)
     }
 }
 

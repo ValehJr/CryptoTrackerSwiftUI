@@ -8,16 +8,36 @@
 import SwiftUI
 
 struct CryptoGridView: View {
-    var body: some View {
-        LazyVGrid(columns: gridLayout,spacing: 16 ,content: {
-		   ForEach(0 ..< 16) { coin in
-			  CryptoDetailView()
-		   }//LOOP
-		})//VGrid
-		.padding(.vertical,10)
-    }
+
+   @State var cryptoVM = CryptoGridModelView()
+
+   var body: some View {
+	  LazyVGrid(columns: gridLayout, spacing: 16) {
+		 ForEach(cryptoVM.coins) { coin in
+			NavigationLink(destination: CryptoInfoView(coin: coin)) {
+			   CryptoDetailView(coin: coin)
+				  .onAppear {
+					 if coin == cryptoVM.coins.last {
+						cryptoVM.fetchCoins()
+						print("Update")
+					 }
+				  }
+			}
+		 }
+		 
+		 if cryptoVM.isLoading {
+			ProgressView()
+			   .frame(maxWidth: .infinity, alignment: .center)
+			   .padding()
+		 }
+	  }
+	  .padding(.vertical, 10)
+	  .onAppear {
+		 cryptoVM.fetchCoins()
+	  }
+   }
 }
 
 #Preview {
-    CryptoGridView()
+   CryptoGridView()
 }
